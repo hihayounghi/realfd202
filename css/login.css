@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(reset.css);
+
+
+#cont{
+    background: linear-gradient(159deg, rgba(0,0,0,1) 0%, rgba(100,72,144,1) 100%, rgba(161,124,255,1) 100%);
+}
+
+#title{
+    position: relative;
+    text-align: center;
+    top: 30%;
+    font-size: 40px;
+    color: #fff;
+}
+
+#loginBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+}
+
+.textInput input[type="text"] {
+    display: block;
+    width: 300px;
+    height: 35px;
+    padding: 0 30px 0 50px;
+    border: 2px solid #a3a3f4;
+    font-size: 20px;
+    line-height: 20;
+    margin-bottom: 10px;
+    background: url(../images/sprite_icon.png) 12px -230px no-repeat;
+    color: #fff;
+}
+.textInput input[type="password"] {
+    display: block;
+    width: 300px;
+    height: 35px;
+    padding: 0 30px 0 50px;
+    border: 2px solid #a3a3f4;
+    font-size: 20px;   
+    line-height: 35px;
+    margin-bottom: 20px;
+    background: url(../images/sprite_icon.png) 12px -261px no-repeat;
+    color: #fff;
+}
+
+.btnBox{
+    position: relative;
+    top: 0;
+}
+
+.btnBox input[type="submit"]{
+    width: 384px;
+    height: 36px;
+    line-height: 35px;
+    font-size: 20px;
+    background-color: #a3a3f4;
+    margin-bottom: 30px;
+}
+
+.addBox{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+/*    outline: 1px dotted blue;*/
+}
+
+.addBox>span{
+    margin: 0 10px;
+    color: #fff;
+}
+
+.addBox>a{
+    color: #fff;
+}
+
+
+

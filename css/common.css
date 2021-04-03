@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+
+
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;
+}
+
+.sec {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 300px;
+    font-size: 50px;
+    font-family: Verdana;
+    margin: 5px;
+    color: #fff;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#ham {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#ham span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+#ham span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+#ham span:nth-child(2) {
+    top: 10px;
+    left: 0;
+}
+
+#ham span:nth-child(3) {
+    top: 20px;
+    left: 0;
+}
+
+#hammenu {
+    position: absolute;
+    top: 70px;
+    width: 20%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#hammenu li {
+    float: none;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+
+}
+
+
+
+
+
+#login {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#login li + li {
+    margin-left: 20px;
+}
+
+#login li a {
+    position: relative;
+    display: block;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#login li + li a::after {
+    position: absolute;
+    top: 50%;
+    left: -18%;
+    content: "";
+    width: 1px;
+    height: 15px;
+    margin-top: -5px;
+    background-color: #fff;
+}
+
+#login li a:hover {
+    color: #0089ff;
+}

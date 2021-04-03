@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+@import url(common.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/*font-family: 'Jua', sans-serif;*/
+
+
+
+#s1 {
+    background-image: url(../images/mvmv.jpg);
+    background-position: 0 66%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#s2 {
+    position: relative;
+    background: url(../images/film2.jpg) no-repeat center/cover;
+    font-family: 'Jua', sans-serif;
+}
+#s3 {
+    background: url(../images/board.jpg) center/cover;
+}
+
+
+#typed_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 620px;
+    height: 200px;
+    color: #fff;
+    text-shadow: 0 0 3px #777;
+    padding: 20px;
+    text-align: center;
+    font-family: jua;
+}
+
+#typed{
+    font-size: 40px;
+}
+#typed #moviemovie{
+    font-size: 50px;
+    color: aquamarine;
+}
+#typed #time{
+    font-size: 30px;
+    color: aqua;
+}
+
+#typed div{
+    font-size: 30px;
+}
+
+
+
+
+
+
+#titleBox {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vh;
+    text-align: center;
+}
+
+#title {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    font-size: 50px;
+    color: aqua;
+    text-shadow: 0 0 4px #000;
+}
+
+#title span {
+    font-size: 60px;
+}
+
+#subtit {
+    position: relative;
+    bottom: 0px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: aquamarine;
+    text-shadow: 0 0 4px #000;
+
+
+}
+
+#movieList {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#movieList img {
+    width: 200px;
+    height: 300px;
+    box-shadow: 2px 2px 5px #000, 0 0 10px #fff;
+}
+
+#movieList span {
+    display: block;
+    text-align: center;
+    letter-spacing: -0.05em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #534741;
+    font-size: 1.2em; 
+    margin-top: 5px;
+    color: #000;
+    text-shadow: 2px 0 #ffff7f, 0 2px #ffff7f, -2px 0 #ffff7f, 0 -2px #ffff7f;
+}
+
+
+#movieList span input {
+    margin-right: 10px;
+}
+
+input[type="radio"]{
+    font-size: 1em;
+    width: 1.25em;  
+    height: 1.25em;  
+    vertical-align: middle;
+}
+
+#btn_vote {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px 15px;
+    font-family: Jua;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn_vote:hover {
+    background: #ffff7f;
+}
+
+
+
+
+
+#board_box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#board_title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: jua;
+    color: #6fff9d;
+    text-shadow: 0 0 4px #000;
+}
+
+#board_write_btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px
+}
+
+#write_box {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 500px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #efde84;
+    color: #000;
+}
+
+#btn_write {
+    padding: 10px 15px;
+    font-family: Jua;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#btn_write:hover{
+    background-color:#efde84;
+}
+
+#b_box {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    width: 700px;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
